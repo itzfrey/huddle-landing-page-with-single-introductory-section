@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+:root {    
+    /* Primary color*/
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+
+    /* Headings */
+    --heading-font: "Poppins";
+
+    /* Body */
+    --body-font: "Open Sans";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans";
+    background-image: url(images/bg-desktop.svg);
+    background-color: var(--Violet);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    margin: 50px;
+}
+
+.content {
+    display: flex;
+    margin: 0 50px 0;
+    padding-top: 20px;
+}
+
+.content-image {
+    min-width: 100px;  
+    
+}
+
+.content-text {
+    max-width: 510px;
+    padding: 50px 0 0 50px;
+    height: auto;
+}
+.content-heading {
+    color: #fff;
+    font-family: "Poppins";
+    font-size: 2.5rem;
+    font-weight: 600;
+    
+}
+
+.content-p {
+    font-family: var(--body-font);
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.content-button {
+    font-family: var(--body-font);
+    font-weight: 400;
+    color: var(--Violet);
+    font-size: 1rem;
+    width: 200px;
+    padding: 15px;
+    border-radius: 40px;
+    border: none;
+    margin-top: 20px; 
+    cursor: pointer;
+}
+
+.content-button:hover {
+    background-color: var(--Soft-Magenta);
+    color: #fff;
+}
+
+footer {
+    width: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 50px;
+}
+
+.icon {
+    width: auto;
+    display: flex;
+    align-items: flex-end;
+}
+
+.icon div {
+    margin: 0 10px 0;
+}
+
+@media (max-width: 700px) {
+    body {
+        font-family: "Open Sans";
+        background-image: url(images/bg-mobile.svg);
+        background-color: var(--Violet);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: 0 30px;
+        align-items: center;
+
+    }
+
+    header {
+        margin: 50px 30px;
+    }
+
+    header img {
+        width: 40%;
+    }
+
+    .content img {
+        width: 100%;
+    }
+
+    .content-text {
+        padding: 0;
+        width: auto;
+        text-align: center;
+        margin: 40px 0 0;
+    }
+    
+    .content-heading {
+        font-size: 1.5rem;
+        
+    }
+
+    .content-button {
+        width: 150px;
+        padding: 10px;
+    }
+
+    footer {
+        margin: 20px ;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon div {
+        margin: 0 5px 0;
+    }
+
+    .facebook {
+        width: 20px;
+    }
+
+    .twitter {
+        width: 20px;
+    }
+
+    .instagram {
+        width: 20px;
+
+    }
+
+}
+
